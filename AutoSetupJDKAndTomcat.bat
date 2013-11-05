@@ -33,7 +33,7 @@ echo set JAVA_HOME successful
 
 echo set JRE_HOME
 wmic ENVIRONMENT where "name='JRE_HOME'" delete
-wmic ENVIRONMENT create name="JRE_HOME",username="<system>",VariableValue="%jdkTargetFolderPath%\jre\bin"
+wmic ENVIRONMENT create name="JRE_HOME",username="<system>",VariableValue="%jdkTargetFolderPath%\jre"
 echo set JRE_HOME successful
 
 echo set PATH
